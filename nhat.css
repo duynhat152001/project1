@@ -1,0 +1,36 @@
+html
+{
+    
+    background-color:#129062 ;
+    
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    color: aliceblue;
+}
+.avatar{
+    border-radius: 100px;
+}
+h2{
+    font-family: 'Arima', cursive;
+    margin: 10px ;
+}
+p{
+    width: 800px
+}
+.button{
+    width: 300px; 
+    border: 0px;
+    border-radius: 100px;
+    padding : 15px 15px 6px ;
+    
+    
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(60, 59, 59);
+    font-family: 'Arima',cursive;
+    font-size: 15px;
+  }
