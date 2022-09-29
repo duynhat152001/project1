@@ -10,18 +10,31 @@
             denoff.innerHTML = '<img src="denon1.gif">'
         }
     </script>
+    <div style="float: left;"><img class="logo" src="https://pmo.hcmute.edu.vn/Resources/Images/SubDomain/ssc/logo_spkt.jpg" width="85"/></div>
+    <div id="logotruong">
+        <h2 style="font-family:Arial;font-size: 100%;color: rgb(55, 127, 220);">TRƯỜNG ĐẠI HỌC</h2>
+        <h1 style="font-family:Arial;font-size: 5mm;color:rgb(55, 127, 220) ;">SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH</h1>
+        <hr size="4" width="60%" color="darkblue" style="float: left;"><br>
+        <h2 style="font-family:Arial;font-size: 100%;color:black;">HCMC University of Technology and Education</h2></div>
+    
+
 </head>
 <link rel="stylesheet" href="mywebsite.css">
 <body>
 
+    <span id="luongmua"></span>
     <div id="header">
         <h1 > <center><b>Smart home </b></center> </h1> 
     </div>
     <div id="main">
         <div id="top">
+            <h5 id="nhietdof" ></h5>
+            <h5 id="doamf"></h5>
+            <h5 id="luongmuaf"></h5><br>
             <div id="nhietdo"> 
                 <center><h2 > Nhiệt Độ </h2></center> 
                 <h1><img src="nhietdo1.png" id="nd"></h1>
+                
                 
             </div>
             <div id="doam">
@@ -35,6 +48,7 @@
                 
             </div>
         </div>
+
         <div id="bottom">
             <div id="den">
                 <center><img src="den1.png" ></center>
@@ -55,32 +69,92 @@
                 <center><h3 > Rèm cửa </h3></center> 
             </div>
         </div>
-
     </div>
 
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+    <form>
+      <!---->  <script src="functions.js"></script>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+        <!-- lien ket voi functions.js -->
+        
+        
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+        apiKey: "AIzaSyD83W3D0ryA_EXRBs2tjN7661XugSePg8I",
+        authDomain: "vd1nhietdo.firebaseapp.com",
+        databaseURL: "https://vd1nhietdo-default-rtdb.firebaseio.com",
+        projectId: "vd1nhietdo",
+        storageBucket: "vd1nhietdo.appspot.com",
+        messagingSenderId: "65530489949",
+        appId: "1:65530489949:web:f4d7410cca719215a1f1b4",
+        measurementId: "G-J0P9RCB3NE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        
+        //functions
+        // make sure that the name in ' ' match with name of your database child
+        var nhietdo = document.getElementById('nhietdof') ;
+        var dbRef = firebase.database().ref().child('nhietDo');
+        
+        var doam = document.getElementById('doamf');
+        var dbRef2 = firebase.database().ref().child('doAm');
+        
+        var luongmua = document.getElementById('luongmuaf');
+        var dbRef3 = firebase.database().ref().child('luongMua');
+        
+        dbRef.on('value', snap => nhietdo.innerText = snap.val());
+        dbRef2.on('value', snap => doam.innerText = snap.val());
+        dbRef3.on('value', snap => luongmua.innerText = snap.val());
+        
+        
+        </script>
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAA5wwpCuxqZna4FtsN1dX-KnVpnEhFAfI",
-  authDomain: "nhiet-do-5847c.firebaseapp.com",
-  projectId: "nhiet-do-5847c",
-  storageBucket: "nhiet-do-5847c.appspot.com",
-  messagingSenderId: "979883941302",
-  appId: "1:979883941302:web:6c3fcc909cef1476ccf517",
-  measurementId: "G-P7MVZ17FBM"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
+    
+ 
 </body>
 
+<footer> 
+    <table style="position: 70px ;">
+        <thead>
+            
+         <th><center>Trần Duy Nhất</center> </th>
+            <th> Huỳnh Hữu Khương</th>
+            <th>Hồ Minh Quý</th>
+        </thead>
+        <body>
+            <td ><center> <img class="avatar"  src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/167560131_2979868835562772_7338595041414056034_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TvFB6E-vhCUAX9OhZWc&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT90KvfyDDskpTyvjYxN5Y_aknXYHDqma6XId8e7UaCGfQ&oe=63427595"   width="100" height="100"> <br>
+                MSSV:19161146 <br>
+                Sdt:0332528055 <br>
+                Email:trannhat01052001  @gmail.com </center>     
+            </td>
+    
+            <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/292117734_1359034104605953_7441327560548214020_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Fh_ORP1OalYAX8xcCbr&_nc_ht=scontent-hkt1-1.xx&oh=00_AT8QWN87b5k5DR7EdnNGDYwEzl9Xo-mh-x9dImgJAC-Wjg&oe=632B2832" width="100" height="100" ><br>
+                MSSV:19161122 <br>
+                Sdt:0986325049 <br>
+                Email:khuonghhspkt   @gmail.com</center>             
+            </td>
+    
+            <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/176340091_2977074462523554_1564424111781875575_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AjLNSi1bz8EAX-l8SjG&tn=i_5ofz_OOxeK4Np7&_nc_ht=scontent-hkt1-1.xx&oh=00_AT9GWhkLm29emdYi4PjH4lqPhNnLVgnQdourzpeOfmiCzw&oe=634BB0DC" width="100" height="100"><br>
+                MSSV:19161156 <br>
+                Sdt:0868366424 <br>
+                 Email:hominhquy1710   @gmail.com   </center>            
+            </td>
+        
+ </body>
+    
+    </div>
+    </table>
+    
+</footer>
 
 </html>
