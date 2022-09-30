@@ -10,13 +10,10 @@ body{
     height: 20px;
     padding-bottom: 5px ;
 }
-footer{
-    font-size: 100mm;
-    width: 5000px;
-    height: 50px;
-    position: relative;
+#f{
+    padding-right: 70px;
+    padding-left: 50px;
 }
-
 .logo{
     padding-right: 20px;
     
@@ -54,8 +51,7 @@ h3{
 }
 h4{
     color: #0a0a0a;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font:caption;
 }
 
 table{ 
@@ -68,10 +64,10 @@ table{
 
 
 .avatar{
+    width: 80px;
+    height: 80px;
     border-radius:80px;
-    padding-bottom: 10px;
-    background-position-y: 500px;
-    
+
 }
 
 #nhietdo{
