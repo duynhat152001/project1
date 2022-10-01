@@ -106,13 +106,13 @@ img#m{
     width: 120px;
     height: 100px; 
 }
-#button{
+button{
     width: 80px;
     height: 60px; 
     border-radius: 100px;
     color: #32c521;
 }
-#button:hover {
+button:hover {
     background-color: rgb(145, 146, 150);
     font-size: 15px;
   }
@@ -169,4 +169,14 @@ h5{
     color: #eaf3ee;
     font-size: 25px;
     
+}
+.fan_off{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.fan_on{
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
