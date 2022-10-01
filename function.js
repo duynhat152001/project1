@@ -41,7 +41,7 @@ btn5.addEventListener('click', ()=>{
 })
 
 btn6.addEventListener('click', ()=>{
-    img2.src = 'call1.png';
+    img2.src = 'call.png';
     firebase.database().ref("thietbi").set({call: 0})
 })
 
