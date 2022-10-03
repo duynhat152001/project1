@@ -125,7 +125,7 @@ button:hover {
     float: left;
     padding-right: 10px;
 }
-#dieuhoa{
+#quat{
     position: relative;
     right: 22%;
     top: 380px;
@@ -133,7 +133,7 @@ button:hover {
     padding-right: 2px;
 }
 
-#remcua{
+#chuong{
     position: relative;
     right: 6%;
     top: 380px;
@@ -170,13 +170,9 @@ h5{
     font-size: 25px;
     
 }
-.fan_off{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
+
 .av{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: auto;   
 }

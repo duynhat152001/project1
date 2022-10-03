@@ -5,7 +5,7 @@ let btn2 = document.querySelector('#btn2');
 
 // functions nut bam
 btn1.addEventListener('click', ()=>{
-    img.src = 'denon1.gif'; 
+    img.src = 'denon1.png'; 
     firebase.database().ref("thietbi").set({den: 1})
 })
 
