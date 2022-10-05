@@ -62,7 +62,6 @@ table{
     
 }
 
-
 .avatar{
     width: 80px;
     height: 80px;
@@ -156,8 +155,8 @@ button:hover {
     margin-top: 200px;
     float: left;
     padding-right: 20px;
-
 }
+
 #luongmuaf{
     position: relative;
     left: 72%;
