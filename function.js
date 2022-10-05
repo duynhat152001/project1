@@ -3,7 +3,8 @@ let btn1 = document.querySelector('#btn1');
 let img = document.querySelector('#img');
 let btn2 = document.querySelector('#btn2');
 
-// functions nut bam
+// functions nut bam 
+//khi bấm nút btn1 thì thực hiện mở tấm ảnh và cập nhật giá trị đèn =1 lên firebase
 btn1.addEventListener('click', ()=>{
     img.src = 'denon1.png'; 
     firebase.database().ref("thietbi").update({den: 1})

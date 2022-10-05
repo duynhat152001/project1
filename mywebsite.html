@@ -10,18 +10,17 @@
         <h2 style="font-family:Arial;font-size: 100%;color: rgb(55, 127, 220);">TRƯỜNG ĐẠI HỌC</h2>
         <h1 style="font-family:Arial;font-size: 5mm;color:rgb(55, 127, 220) ;">SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH</h1>
         <hr size="4" width="60%" color="darkblue" style="float: left;"><br>
-        <h2 style="font-family:Arial;font-size: 100%;color:black;">HCMC University of Technology and Education</h2></div>
+        <h2 style="font-family:Arial;font-size: 100%;color:black;">HCMC University of Technology and Education</h2>
+    </div>
     
 </head>
-<link rel="stylesheet" href="mywebsite.css">
+        <link rel="stylesheet" href="mywebsite.css"> <!--liên kiết file css với file html-->
 <body>
-
-    <span id="luongmua"></span>
     <div id="header">
         <h1 > <center><b>SMART HOME </b></center> </h1> 
     </div>
-    <div id="main">
-        <div id="top">
+    <div id="main">  <!--div tạo ra khối và gán cho cái id là main để ta có thể chỉnh các thông số bên file css  -->
+        <div id="top"> <!--phần trên trong khối main -->
             <h5 id="nhietdof" ></h5>
             <h5 id="doamf"></h5>
             <h5 id="luongmuaf"></h5><br>
@@ -39,9 +38,9 @@
                 <center><h2 > Mưa </h2></center> 
                 <h1><img src="luongmua1.png" id="m"></h1>
                 
-            </div>
+            </div> 
         </div>
-
+        <div id="bootom">   <!--phần dưới trong khối main-->
             <div id="den">
                 <center>
                     <img class="av" src="den1.png" id="img"  alt="">
@@ -65,18 +64,17 @@
         </div>
     </div>
 
+    <!--conect firebase with website-->
     <form>
-      <script src="function.js"></script>
+      <script src="function.js"></script> <!--link file .js with file html-->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
         <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
-        <!-- lien ket voi functions.js -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script><!-- lien ket voi functions.js -->
         <script>
         // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
         apiKey: "AIzaSyD83W3D0ryA_EXRBs2tjN7661XugSePg8I",
         authDomain: "vd1nhietdo.firebaseapp.com",
@@ -93,56 +91,51 @@
         
         //functions
         // make sure that the name in ' ' match with name of your database child
-        var nhietdo = document.getElementById('nhietdof') ;
-        var dbRef = firebase.database().ref().child('nhietDo');
+        var nhietdo = document.getElementById('nhietdof') ; //khai báo biến nhiệt độ. var là kiểu dữ liệu var=int+float+char ...
+        var dbRef = firebase.database().ref().child('nhietDo'); //đọc giá trị nhietDo từ firebase
         
         var doam = document.getElementById('doamf');
-        var dbRef2 = firebase.database().ref().child('doAm');
+        var dbRef2 = firebase.database().ref().child('doAm');   //đọc giá trị doAm từ firebase
         
         var luongmua = document.getElementById('luongmuaf');
-        var dbRef3 = firebase.database().ref().child('luongMua');
+        var dbRef3 = firebase.database().ref().child('luongMua');   //đọc giá trị luongMua từ firebase
         
         dbRef.on('value', snap => nhietdo.innerText = snap.val());
         dbRef2.on('value', snap => doam.innerText = snap.val());
         dbRef3.on('value', snap => luongmua.innerText = snap.val());
         </script>
+</body>
 
+<!--phần footer phàn giới thiệu thông tin liên lạc-->
 <footer> 
-    <table  >
-        <thead>
-            
+    <table> <!-- thẻ tạo bảng -->
+        <thead> <!--tên mục cột-->  
          <th><center>Trần Duy Nhất</center> </th>
             <th> Huỳnh Hữu Khương</th>
             <th>Hồ Minh Quý</th>
         </thead>
-        <body>
-            <td ><center> <img class="avatar"  src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/167560131_2979868835562772_7338595041414056034_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TvFB6E-vhCUAX9OhZWc&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT90KvfyDDskpTyvjYxN5Y_aknXYHDqma6XId8e7UaCGfQ&oe=63427595"   > <br>
-                <h4 id="f">
-                MSSV:19161146 <br>
-                Email:trannhat01052001@gmail.com      </center>   
-                </h4>
-            </td>
+            <body> <!--nội dung cột--> <!--với lần lượt các thẻ td cho từng nội dung từng cột-->
+                <td ><center> <img class="avatar"  src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/167560131_2979868835562772_7338595041414056034_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TvFB6E-vhCUAX9OhZWc&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT90KvfyDDskpTyvjYxN5Y_aknXYHDqma6XId8e7UaCGfQ&oe=63427595"   > <br>
+                    <h4 id="f">
+                        MSSV:19161146 <br>
+                        Email:trannhat01052001@gmail.com </center>   
+                     </h4>
+                </td>
     
-            <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/292117734_1359034104605953_7441327560548214020_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1lRkHFPtSxYAX_ctY64&_nc_ht=scontent-hkt1-1.xx&oh=00_AT-Z6KoLOc6m4qgh1IW-l-fqu-iW7nl-HBdIFJYbqhIihQ&oe=633CF472"  ><br>
-                <h4 id="f">
-                MSSV:19161122 <br>
-                Email:khuonghhspkt@gmail.com </center>   
-                </h4>          
-            </td>
+                <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/292117734_1359034104605953_7441327560548214020_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1lRkHFPtSxYAX_ctY64&_nc_ht=scontent-hkt1-1.xx&oh=00_AT-Z6KoLOc6m4qgh1IW-l-fqu-iW7nl-HBdIFJYbqhIihQ&oe=633CF472"  ><br>
+                    <h4 id="f">
+                        MSSV:19161122 <br>
+                        Email:khuonghhspkt@gmail.com </center>   
+                    </h4>          
+                </td>
     
-            <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/176340091_2977074462523554_1564424111781875575_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AjLNSi1bz8EAX-l8SjG&tn=i_5ofz_OOxeK4Np7&_nc_ht=scontent-hkt1-1.xx&oh=00_AT9GWhkLm29emdYi4PjH4lqPhNnLVgnQdourzpeOfmiCzw&oe=634BB0DC" ><br>
-                <h4 id="f">
-                MSSV:19161156 <br>
-                 Email:hominhquy1710@gmail.com    
-                </h4>    </center>       
-            </td>
-        </body>
-    
-    </div>
-    </table>
-    
+                <td><center><img class="avatar" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/176340091_2977074462523554_1564424111781875575_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AjLNSi1bz8EAX-l8SjG&tn=i_5ofz_OOxeK4Np7&_nc_ht=scontent-hkt1-1.xx&oh=00_AT9GWhkLm29emdYi4PjH4lqPhNnLVgnQdourzpeOfmiCzw&oe=634BB0DC" ><br>
+                     <h4 id="f">
+                        MSSV:19161156 <br>
+                        Email:hominhquy1710@gmail.com    
+                    </h4>    </center>       
+                </td>
+            </body>
+    </table>  
 </footer>
- 
-</body>
-
 </html>

@@ -1,3 +1,10 @@
+/*
+dấu " . " truy xuất tới class
+dấu " # " truy suất tới id
+magin : dùng để căn lề 
+parding khoảng không gian xung quanh của đối tượng 
+*/
+
 body{
     font-family: tahoma;
     width: 1000px;
@@ -8,39 +15,33 @@ body{
 #logotruong{
     width: 600px;
     height: 20px;
-    padding-bottom: 5px ;
+    padding-bottom: 5px ; /* căn lề trên*/
 }
 #f{
-    padding-right: 70px;
-    padding-left: 50px;
+    padding-right: 70px;    /*căn lề phải*/
+    padding-left: 50px;     /*căn lề trái*/
 }
 .logo{
-    padding-right: 20px;
-    
+    padding-right: 20px;    
 }
-
 #header{
     width: 100%;
     height: 100px;
     font-size:60px;
     background-position: center;
     background: url("giphy.gif") ;
-    -webkit-background-clip: text;    /*dung để biên ảnh bagrow thanh kieu chữ text*/
-    color: transparent;
+    -webkit-background-clip: text;    /*dung để biên ảnh bagrow thanh kiểu chữ text*/
+    color: transparent;                /* biến màu chữ thành màu trong suốt*/
     padding-bottom: 30px;
-
 }
-
 #main{
-    height:650px ;
+    height:650px ;             /*kích thước của khối main*/
     width: 110%;
     background-color: white;
     background-image: url("bgr.jpg")  ;
-    background-size: 120% 630px;
-    background-repeat: no-repeat;
-    
+    background-size: 120% 630px;  /*kích thước của cái hình background*/
+    background-repeat: no-repeat;   
 }
-
 h2{
     color: #f2fcf3;
     font-size: 20px;
@@ -53,35 +54,34 @@ h4{
     color: #0a0a0a;
     font:caption;
 }
+h5{
+    color: #eaf3ee;
+    font-size: 25px;  
+}
 
 table{ 
     width: 70%;
     padding-right: 50%;
     padding-bottom: 100px;
-    font-size: 25px;
-    
+    font-size: 25px; 
 }
-
 .avatar{
     width: 80px;
     height: 80px;
     border-radius:80px;
-
 }
-
 #nhietdo{
     position: relative;
     left: 2%;
     margin-top: 10px;
     float: left;
     padding-right: 20px;
-
 }
 #doam{
     position: relative;
     left: 22%;
     margin-top: 10px;
-    float:left ;
+    float:left ;            /* dồn  id: độ ẩm  về bên trái */
     padding-right: 20px;
 }
 #mua{
@@ -108,16 +108,12 @@ img#m{
 button{
     width: 80px;
     height: 60px; 
-    border-radius: 100px;
-    color: #32c521;
+    border-radius: 100px;           /* thay đổi viền của nút nhấn thành bo tròn*/
 }
-button:hover {
+button:hover {    /*thêm hiệu ứng cho nút nhấn khi đưa chuột tới thì nó hiện màu khác*/ 
     background-color: rgb(145, 146, 150);
-    font-size: 15px;
   }
-
 #den{ 
-    border: #32c521;
     position: relative;
     right: 40%;
     top: 380px;
@@ -139,8 +135,6 @@ button:hover {
     float: left;
     padding-right: 20px;
 }
-
-
 #nhietdof{
     position: relative;
     left: 19%;
@@ -156,7 +150,6 @@ button:hover {
     float: left;
     padding-right: 20px;
 }
-
 #luongmuaf{
     position: relative;
     left: 72%;
@@ -164,12 +157,6 @@ button:hover {
     float: left;
     padding-right: 20px;
 }
-h5{
-    color: #eaf3ee;
-    font-size: 25px;
-    
-}
-
 .av{
     width: 80px;
     height: 80px;
