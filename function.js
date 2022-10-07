@@ -7,7 +7,7 @@ let btn2 = document.querySelector('#btn2');
 //khi bấm nút btn1 thì thực hiện mở tấm ảnh và cập nhật giá trị đèn =1 lên firebase
 btn1.addEventListener('click', ()=>{
     img.src = 'denon1.png'; 
-    firebase.database().ref("thietbi").update({den: 1})
+    firebase.database().ref("thietbi").update({den: 1}) //update data onto firebase
 })
 
 btn2.addEventListener('click', ()=>{
@@ -37,12 +37,12 @@ let btn6 = document.querySelector('#btn6');
 
 // functions nut bam
 btn5.addEventListener('click', ()=>{
-    img2.src = 'callon.gif'; 
+    img2.src = 'maybom.gif'; 
     firebase.database().ref("thietbi").update({call: 1})
 })
 
 btn6.addEventListener('click', ()=>{
-    img2.src = 'call.png';
+    img2.src = 'maybom.png';
     firebase.database().ref("thietbi").update({call: 0})
 })
 

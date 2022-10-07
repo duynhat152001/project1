@@ -10,7 +10,7 @@ body{
     width: 1000px;
     height:min-content;
     margin: auto;
-    background-image: linear-gradient(to left top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    background-image: linear-gradient(to left top, #ffffff);
 }
 #logotruong{
     width: 600px;
@@ -29,7 +29,7 @@ body{
     height: 100px;
     font-size:60px;
     background-position: center;
-    background: url("giphy.gif") ;
+    background: url("giphy4.gif") ;
     -webkit-background-clip: text;    /*dung để biên ảnh bagrow thanh kiểu chữ text*/
     color: transparent;                /* biến màu chữ thành màu trong suốt*/
     padding-bottom: 30px;
