@@ -32,6 +32,7 @@ body{
     background: url("giphy4.gif") ;
     -webkit-background-clip: text;    /*dung để biên ảnh bagrow thanh kiểu chữ text*/
     color: transparent;                /* biến màu chữ thành màu trong suốt*/
+   
     padding-bottom: 30px;
 }
 #main{
