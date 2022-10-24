@@ -5,25 +5,26 @@ magin : dùng để căn lề
 parding khoảng không gian xung quanh của đối tượng 
 */
 
+
+.logo{
+    padding-right: 20px;    
+}
+#inftruong{
+    width: 600px;
+    height: 20px;
+    padding-bottom: 5px ; /* căn lề trên*/
+    padding-right: 20px;    
+}
+
 body{
     font-family: tahoma;
     width: 1000px;
     height:min-content;
     margin: auto;
-    background-image: linear-gradient(to left top, #ffffff);
+    padding: auto;
+    background: #fcfcfc;
 }
-#logotruong{
-    width: 600px;
-    height: 20px;
-    padding-bottom: 5px ; /* căn lề trên*/
-}
-#f{
-    padding-right: 70px;    /*căn lề phải*/
-    padding-left: 50px;     /*căn lề trái*/
-}
-.logo{
-    padding-right: 20px;    
-}
+
 #header{
     width: 100%;
     height: 100px;
@@ -32,7 +33,6 @@ body{
     background: url("giphy4.gif") ;
     -webkit-background-clip: text;    /*dung để biên ảnh bagrow thanh kiểu chữ text*/
     color: transparent;                /* biến màu chữ thành màu trong suốt*/
-   
     padding-bottom: 30px;
 }
 #main{
@@ -42,6 +42,16 @@ body{
     background-image: url("bgr.jpg")  ;
     background-size: 120% 630px;  /*kích thước của cái hình background*/
     background-repeat: no-repeat;   
+}
+#top
+{
+    height: 30px ;
+    width: 102%;
+}
+#bootom
+{
+    height: 300px ;
+    width: 110%;
 }
 h2{
     color: #f2fcf3;
@@ -66,11 +76,8 @@ table{
     padding-bottom: 100px;
     font-size: 25px; 
 }
-.avatar{
-    width: 80px;
-    height: 80px;
-    border-radius:80px;
-}
+
+/* css cho vi tri*/
 #nhietdo{
     position: relative;
     left: 2%;
@@ -101,41 +108,13 @@ img#da{
     height: 100px; 
     padding-bottom: 25px;
 }
-
 img#m{
     width: 120px;
     height: 100px; 
 }
-button{
-    width: 80px;
-    height: 60px; 
-    border-radius: 100px;           /* thay đổi viền của nút nhấn thành bo tròn*/
-}
-button:hover {    /*thêm hiệu ứng cho nút nhấn khi đưa chuột tới thì nó hiện màu khác*/ 
-    background-color: rgb(145, 146, 150);
-  }
-#den{ 
-    position: relative;
-    right: 40%;
-    top: 380px;
-    float: left;
-    padding-right: 10px;
-}
-#quat{
-    position: relative;
-    right: 22%;
-    top: 380px;
-    float: left;
-    padding-right: 2px;
-}
 
-#chuong{
-    position: relative;
-    right: 6%;
-    top: 380px;
-    float: left;
-    padding-right: 20px;
-}
+
+/*css cho gia tri các số lấy từ firebase*/
 #nhietdof{
     position: relative;
     left: 19%;
@@ -158,8 +137,48 @@ button:hover {    /*thêm hiệu ứng cho nút nhấn khi đưa chuột tới t
     float: left;
     padding-right: 20px;
 }
+
+#den{ 
+    position: relative;
+    right: 40%;
+    top: 380px;
+    float: left;
+    padding-right: 10px;
+}
+#quat{
+    position: relative;
+    right: 22%;
+    top: 380px;
+    float: left;
+    padding-right: 2px;
+}
+#chuong{
+    position: relative;
+    right: 6%;
+    top: 380px;
+    float: left;
+    padding-right: 20px;
+}
 .av{
     width: 80px;
     height: 80px;
     margin: auto;   
+}
+button{
+    width: 80px;
+    height: 60px; 
+    border-radius: 100px;           /* thay đổi viền của nút nhấn thành bo tròn*/
+}
+button:hover {    /*thêm hiệu ứng cho nút nhấn khi đưa chuột tới thì nó hiện màu khác*/ 
+background-color: rgb(145, 146, 150);
+  }
+
+#f{
+    padding-right: 70px;    /*căn lề phải*/
+    padding-left: 50px;     /*căn lề trái*/
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius:80px;
 }

@@ -6,7 +6,7 @@
     <title>smart home</title>
     
     <div style="float: left;"><img class="logo" src="https://pmo.hcmute.edu.vn/Resources/Images/SubDomain/ssc/logo_spkt.jpg" width="85"/></div>
-    <div id="logotruong">
+    <div id="inftruong">
         <h2 style="font-family:Arial;font-size: 100%;color: rgb(55, 127, 220);">TRƯỜNG ĐẠI HỌC</h2>
         <h1 style="font-family:Arial;font-size: 5mm;color:rgb(55, 127, 220) ;">SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH</h1>
         <hr size="4" width="60%" color="darkblue" style="float: left;"><br>
@@ -21,9 +21,10 @@
     </div>
     <div id="main">  <!--div tạo ra khối và gán cho cái id là main để ta có thể chỉnh các thông số bên file css  -->
         <div id="top"> <!--chia ra phần trên trong khối main -->
-            <h5 id="nhietdof" ></h5>
+            <h5 id="nhietdof" ></h5>  <!--gọi ra để gán giá trị đọc từ firebase cho nó -->
             <h5 id="doamf"></h5>
             <h5 id="luongmuaf"></h5><br>
+
             <div id="nhietdo"> 
                 <center><h2 > Nhiệt Độ </h2></center> 
                 <h1><img src="nhietdo1.png" id="nd"></h1>
@@ -66,7 +67,7 @@
 
     <!--conect firebase with website-->
     <form>
-      <script src="function.js"></script> <!--link file .js with file html-->
+        <script src="function.js"></script> <!--link file .js with file html-->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
@@ -110,7 +111,7 @@
 <footer> 
     <table> <!-- thẻ tạo bảng -->
         <thead> <!--tên mục cột-->  
-         <th><center>Trần Duy Nhất</center> </th>
+         <th>Trần Duy Nhất </th>
             <th> Huỳnh Hữu Khương</th>
             <th>Hồ Minh Quý</th>
         </thead>
@@ -129,7 +130,7 @@
                     </h4>          
                 </td>
     
-                <td><center><img class="avatar" src="quy.jpeg"0
+                <td><center><img class="avatar" src="quy.jpeg"
                      ><br>
                      <h4 id="f">
                         MSSV:19161156 <br>
